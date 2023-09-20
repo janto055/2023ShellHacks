@@ -1,0 +1,23 @@
+StateFarm - Make Insure Easy
+
+Pull ideas from iGrad? 
+
+Should have: 
+a homepage “hub”; options
+	=> to see the cars on ur plans
+	=> see the details of ur insurance, bills, pay, etc.
+	=> Submit claims, view status, etc. 
+	=> lessons to learn more about what everything means, interactive on app?
+
+we could create a baseline in Java or C that kinda demos how things would work; command line interface based on previous Java/C projects.
+
+Use Figma or Canva or something to design what the frontend would look like. Try to learn Android Studio to build something somewhat functional???? (not sure if enough time for that)
+	
+
+BitStop - BItcoin Accessibilty - Integrate Bitcoin to Daily Life; As common as a debitcard
+
+GooglePay/ApplePay/Tap for bitcoin?
+
+
+VanGaurd - Financial Future for minorities
+

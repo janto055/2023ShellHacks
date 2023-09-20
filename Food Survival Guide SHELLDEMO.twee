@@ -1,0 +1,367 @@
+:: StoryTitle
+CooOoOOOking
+
+
+:: StoryData
+{
+  "ifid": "BB9EED6F-B1E8-4E1B-A57B-2BE0B6ED9911",
+  "format": "Harlowe",
+  "format-version": "3.3.7",
+  "start": "Home",
+  "tag-colors": {
+    "Home": "purple"
+  },
+  "zoom": 1
+}
+
+
+:: Al Dente {"position":"325,450","size":"100,100"}
+(align:"=><=")+(box:"X")[<iframe width="950" height="750" src="https://www.youtube.com/watch?v=_OnTemsrUrw" frameborder="0" allowfullscreen></iframe>]
+
+
+:: Breakfast Egg Muffin {"position":"700,425","size":"100,100"}
+(text-color:black) [
+
+(css:"font-size: 175%")
+ [Breakfast Egg Muffin w/ 3 Variations]
+ 
+  (text-style: "italic") 
+ [Scroll down for ingredients and instructions.]
+ 
+ (align:"=><=")+(box:"X")
+
+[<iframe width="950" height="750" src="https://www.youtube.com/watch?v=CVQNKshrPcE" frameborder="0" allowfullscreen></iframe>]
+ 
+ (text-style: "underline", "bold") + (css: "font-size: 125%")
+[Ingredients]
+
+12 Large Eggs 
+2 Tablespoons of (text-style: "italic")[[chopped ->Knife Safety]] onions
+Salt and Pepper
+
+
+ (text-style: "bold")
+[Tomato Spinach Mozzarella:]
+
+And some spinach, cherry tomatoes, and mozarella cheese to the egg base. 
+
+ (text-style: "bold")
+[Bacon Cheddar:]
+
+Add some cooked bacon and shredded cheddar cheese to the egg base. 
+
+ (text-style: "bold")
+[Garlic Mushroom Pepper:]
+
+Add some brown mushrooms, red bell pepper, (text-style: "italic")[[[chopped ->Knife Safety]]] parsely, and garlic powder (or minced garlic) to the egg base. 
+
+
+ (text-style: "underline", "bold") + (css: "font-size: 125%")
+[Instructions]
+
+0. Preheat your oven to 350 degrees, or 180 degrees Celcius
+0. (text-style: "italic")[[[Whisk ->Whisk]]] together eggs, onion, salt, and pepper.
+0. Add the mixture to a greased muffin pan until each hole is filled half way.
+0. Divide your choice of toppings (Tomato Spinach, Bacon Cheddar, or Garlic Mushroom) to each of the holes.
+0. Bake the egg mixtures for 15-20 minutes or until golden brown. 
+0. Allow them to cool and then serve or store in a container for future consumption. 
+ ]
+
+
+:: Chicken Rice Bowl {"position":"950,550","size":"100,100"}
+(text-color:black) [
+
+(css:"font-size: 175%")
+ [Chicken Rice Bowl]
+ 
+ (text-style: "italic") 
+ [Scroll down for ingredients and instructions.]
+ 
+ (align:"=><=")+(box:"X")
+
+[<iframe width="950" height="750" src="https://www.youtube.com/watch?v=oxXNklNgmbM" frameborder="0" allowfullscreen></iframe>]
+ 
+ (text-style: "underline", "bold") + (css: "font-size: 125%")
+[Ingredients]
+
+1 cup uncooked instant rice
+1 cup chicken broth
+1/2 cup chopped frozen green pepper, thawed
+1/4 cup chopped onion
+2 teaspoons olive oil
+1 package (9 ounces) ready-to-use grilled chicken breast strips
+1/2 cup frozen corn, thawed
+1/2 cup frozen peas, thawed
+1 teaspoon dried basil
+1 teaspoon rubbed sage
+1/8 teaspoon salt
+1/8 teaspoon pepper
+
+
+ (text-style: "underline", "bold") + (css: "font-size: 125%")
+[Instructions]
+
+0. Cook your rice in chicken broth according to the rice's cooking instructions.
+0. In a large pan, add oil and (text-style: "italic")[[[saute ->Saute]]] the onion & green pepper until tender. 
+0. Stir in the chicken, corn, peas, and sage.
+0. Cook for 4-5 minutes of medium-high heat or until cooked through. 
+0. Stir in the rice, salt, and pepper. 
+ ]
+
+
+:: Creamy Penne Pasta {"position":"700,550","size":"100,100"}
+(text-color:black) [
+
+(css:"font-size: 175%")
+ [Creamy Penne Pasta]
+ 
+  (text-style: "italic") 
+ [Scroll down for ingredients and instructions.]
+ 
+ (align:"=><=")+(box:"X")
+
+[<iframe width="950" height="750" src="https://www.youtube.com/watch?v=qrwMkuMaCII" frameborder="0" allowfullscreen></iframe>]
+ 
+ (text-style: "underline", "bold") + (css: "font-size: 125%")
+[Ingredients]
+
+Penne Pasta
+Butter or Olive Oil
+Garlic
+Cream Cheese
+Parmesan Cheese
+Lemon
+Salt & Pepper
+
+
+ (text-style: "underline", "bold") + (css: "font-size: 125%")
+[Instructions]
+
+0. Add butter or olive oil to a hot pan and fry garlic until it is lightly browned. 
+0. Cook pasta until (text-style: "italic")[[[al dente ->Al Dente]]]. 
+0. To the pan, add cream cheese, parmesan, (text-style: "italic")[[[lemon zest ->Lemon Zest]]] & juice, salt & pepper, and some pasta water. Stir until it is smooth. 
+0. Drain the pasta and combine with cheese sauce. 
+0. Serve!
+ ]
+
+
+:: Get Started {"position":"500,200","size":"100,100"}
+(css: "font-size: 175%;")[
+(text-colour: black)[
+(text-style: "bold") [What's in your pantry?]
+(text-style: "italic") + (css: "font-size: 75%") [Search for ingredient or select from list.]
+
+(input: bind _ingredient1, " Search")
+
+(checkbox: bind $eggs, "Eggs")
+(checkbox: bind $pasta, "Pasta")
+(checkbox: bind $chicken, "Chicken Thighs")
+(checkbox: bind $rice, "Rice")
+(checkbox: bind $cheese, "Parmesean Cheese")
+(checkbox: bind $vegetable1, "Carrots")
+(checkbox: bind $vegetable2, "Broccoli")
+
+(text-colour: #8BA14B) + (bg:#ddd0b7)[[[Done ->Results Page]]]
+
+(bg:#ddd0b7)[(text-colour: #8BA14B)[
+(align:"<==")+(box:"=XX")[
+[[Home]]]
+
+<input type='text' name='search-box'></input>
+
+<span id='output'></span>
+
+]
+]
+]
+]
+
+<audio src=" https://static.wixstatic.com/mp3/c10194_903194d488dd4a5f8f9352672b7be319.mp3" autoplay>
+
+
+:: Glossary {"position":"200,300","size":"100,100"}
+(css:"font-size: 175%")[
+ (text-color:black)[
+[[Al Dente]]: pasta or rice that is cooked to be firm to the bite.
+
+[[Kitchen Safety]]: The proper safety precautions that must be maintained to ensure a safe kitchen. 
+
+[[Knife Safety]]: The proper way of handling a knife while chopping
+
+[[Lemon Zest]]: The outer layer of a lemon, shaved onto dishes to add flavor
+
+[[Saute]]: To fry quickly in a little bit of hot fat.
+
+[[Whisk]]: Techniques on blending ingredients with a whisk.
+ ]
+ ]
+
+
+:: Home [Home] {"position":"500,75","size":"100,100"}
+(css: "font-size: 175%;")[
+
+
+
+
+
+
+(text-colour: black)[
+
+(align:"=><=")+(box:"X")[
+
+
+
+
+
+
+
+
+[Hello Cooks!
+
+Welcome to the interactive recipe book to learn how to make quick and easy meals using what you have in your home!
+
+
+(text-colour: #8BA14B) + (bg:#ddd0b7)[[[Click Here To Get Started! ->Get Started]]]
+
+
+(text-colour: #8BA14B) + (bg:#ddd0b7)[[[Glossary of Terms & Cooking Skills! ->Glossary]]]
+
+(text-colour: #8BA14B) + (bg:#ddd0b7)[[[All Recipes! ->Recipe List]]]
+]
+]
+]
+]
+]
+]
+]
+
+
+:: Honey Garlic Chicken Thighs {"position":"950,425","size":"100,100"}
+(text-color:black) [
+
+(css:"font-size: 175%")
+ [Honey Garlic Chicken Thighs]
+ 
+  (text-style: "italic") 
+ [Scroll down for ingredients and instructions.]
+ 
+ (align:"=><=")+(box:"X")
+
+[<iframe width="950" height="750" src="https://www.youtube.com/watch?v=LJVzLMH4cbU" frameborder="0" allowfullscreen></iframe>]
+ 
+ (text-style: "underline", "bold") + (css: "font-size: 125%")
+[Ingredients]
+
+Chicken thighs (text-style: "italic")[(recommended boneless & skinless)]
+All-purpose Flour
+Ground Paprika
+Salt & Black Pepper
+Honey or Agave Nectar
+Soy Sauce
+Minced Garlic
+Crushed Red Pepper Flakes (text-style: "italic")[(optional)]
+
+
+ (text-style: "underline", "bold") + (css: "font-size: 125%")
+[Instructions]
+
+0. Preheat your oven to 375 degrees, or 190 degrees Celcius.
+0. In a bowl, mix together the flour and paprika. 
+0. Coat each chicken thigh in the flour mix and then add to a foil lined baking dish. Sprinkle salt & pepper on each thigh.
+0. In another bowl, mix together honey, soy sauce, and garlic. 
+0. Pour evenly on the chicken, ensuring that they are covered front and back. Add crushed red pepper flakes. (text-style: "italic")[(optional)]
+0. Cover the dish with foil and bake for 30 minutes. Then, uncover and finish backing for 15 minutes.
+0. Serve with rice, vegetables, and/or other sides. 
+0. Serve!
+ ]
+
+
+:: Italian Marinara Sauce {"position":"825,550","size":"100,100"}
+(text-color:black) [
+
+(css:"font-size: 175%")
+ [Spaghetti w/ Italian Marinara Sauce]
+ 
+  (text-style: "italic") 
+ [Scroll down for ingredients and instructions.]
+ 
+ (align:"=><=")+(box:"X")
+
+[<iframe width="950" height="750" src=" https://www.youtube.com/watch?v=ULz_aTlyfTg " frameborder="0" allowfullscreen></iframe>]
+ 
+ (text-style: "underline", "bold") + (css: "font-size: 125%")
+[Ingredients]
+
+Spaghetti
+Canned Tomatoes
+Garlic
+Olive Oil
+Dried Oregano
+Salt
+Onion & Chili Flakes (text-style: "italic")[(optional)]
+
+
+ (text-style: "underline", "bold") + (css: "font-size: 125%")
+[Instructions]
+
+0. Add olive oil to a hot pan and (text-style: "italic")[[[saute ->Saute]]] garlic, onion, and chili flakes (text-style: "italic")[(optional)].
+0. Stir in the canned tomatoes and oregano. Cook down for 15 minutes, add seasoning as needed.
+0. While this is cooking, boil your spagetti unil it is (text-style: "italic")[[[al dente ->Al Dente]]].
+0. Drain the pasta and combine with marinara sauce. 
+0. Serve with oregano and a small amount of olive oil. 
+ ]
+
+
+:: Kitchen Safety {"position":"200,575","size":"100,100"}
+(align:"=><=")+(box:"X")[<iframe width="950" height="750" src="https://www.youtube.com/watch?v=AUBGRjnL_vQ" frameborder="0" allowfullscreen></iframe>]
+
+
+:: Knife Safety {"position":"200,700","size":"100,100"}
+(align:"=><=")+(box:"X")[<iframe width="950" height="750" src="https://www.youtube.com/watch?v=3kmDuLVwM48" frameborder="0" allowfullscreen></iframe>]
+
+
+:: Lemon Zest {"position":"75,575","size":"100,100"}
+(align:"=><=")+(box:"X")[<iframe width="950" height="750" src="https://www.youtube.com/watch?v=cmtQFxNuFJQ" frameborder="0" allowfullscreen></iframe>]
+
+
+:: Recipe List {"position":"825,300","size":"100,100"}
+(css:"font-size: 175%")[
+ (text-color:black)[
+ Recipe List:
+ 
+   [[Breakfast Egg Muffin]] 
+
+   [[Italian Marinara Sauce]]
+
+   [[Creamy Penne Pasta]]
+
+   [[Honey Garlic Chicken Thighs]]
+
+   [[Chicken Rice Bowl]]
+ ]
+ ]
+
+
+:: Saute {"position":"75,450","size":"100,100"}
+(align:"=><=")+(box:"X")[<iframe width="850" height="550" src="https://www.youtube.com/watch?v=CTyV3JExDT8" frameborder="0" allowfullscreen></iframe>]
+
+
+:: Whisk {"position":"325,575","size":"100,100"}
+(align:"=><=")+(box:"X")[<iframe width="950" height="750" src="https://youtu.be/2WcvoVHgKos?si=mOFCDMUe6Lh8Mv-p" frameborder="0" allowfullscreen></iframe>]
+
+
+:: StoryStylesheet [stylesheet]
+tw-story {
+  background-image: url("https://static.wixstatic.com/media/c10194_1ffd9466a14340a2ae97724a77095a4f~mv2.webp");
+  background-size: cover;
+  background-position: center center;
+}
+
+tw-story[tags~="Home"] {
+ background-image:url("https://static.wixstatic.com/media/c10194_54c545fce1734c01a6172eb428733b5d~mv2.png");
+ background-size:cover;
+}
+
+tw-sidebar {
+  color: black;
+}

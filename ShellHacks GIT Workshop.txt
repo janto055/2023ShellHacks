@@ -1,0 +1,65 @@
+GitHub is a repo. Git is the thingy. 
+
+Repo - place where code is stored
+Commmit- snapchot of repo
+Origin - URL of remote repo
+Remote - any repo that isnt stored on machine (GitHub repos are remote)
+Upstream - teacking info for branch we push to
+Main/Master - default repo
+
+Git Trees:
+Working Dir - whatever is on the computer at the moment; in IDE
+Index - files that are ready to committ but not yeat committed to repo
+Head - latest commit to the repo
+
+Configure for the first time:
+
+git config --global user.email "youremail@email.com"
+git config --global user.name "Your Name"
+
+--global for all repos --local for specific repos
+
+
+Commands:
+
+git init -- initializes a repository
+mkdir [name] - make directory with name
+cd [name] - change directoy name ("cd .." to go back to prev) 
+git init - create repo
+git remote add origin [url] - set an origin for repo
+git remote -v - display origins set
+[============] - stagegit 
+git add - stage changes by adding to index
+git commit -m [message] - commit with a message "-m" message flag
+git push -u origin master - for the first time you need to specify upstring (-u), specify where (origin) and to (master). after, it will remember where you are pushing until you specify again. 
+git push [branch] - pushes changes on the specified branch to remote repo
+
+	=> default is master branch
+	=> don't use this on anything other than personal projects; use feature branches
+
+git checkout -b [branch] - new branch and switches to it
+git checkout [branch] - switch to existing branch
+
+
+git log - shows committ history (--help can be used with any command to show how to use)
+
+git tag [tag name] [first few letters and # of commit]
+git tag 1.0.0 9c596cb
+
+git push --tags - to push all tags to github
+git clone [URL] - clone a repo (links found from green code button -> local)
+git pull --all - grabs any changes from remote repo to pull them into working dir.
+
+git merge [branch name] - must be in the directory you want to merge with. 
+
+.gitignore - you can make git ignore specific files by default by creating gitignore file
+".gitignore.txt" - new file anywhere, specify file you wish to ignore
+
+bit.ly/git-shell-23
+
+
+Github Features
+
+pull requests -like merges but through github instead of git. especially if you are not able to gain access to someones repo, make a fork on github, make changes, then create pull request to merge. 
+
+forks - create own repo based on other repos. like branches but for different repos. 

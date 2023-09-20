@@ -1,0 +1,161 @@
+:: StoryTitle
+intro
+
+
+:: StoryData
+{
+  "ifid": "82540219-6217-47E2-8CB7-C069D9D9362E",
+  "format": "Harlowe",
+  "format-version": "3.3.7",
+  "start": "Home",
+  "tag-colors": {
+    "Home": "purple"
+  },
+  "zoom": 1
+}
+
+
+:: Click Here To Get Started! {"position":"975,225","size":"100,100"}
+(css: "font-size: 175%;")[
+(text-colour: black)[
+What's in your pantry?
+
+<input type='text' name='search-box'></input>
+
+<span id='output'></span>
+
+
+* Eggs
+* Bread
+* Noodles
+
+(bg:#ddd0b7)[(text-colour: #8BA14B)[
+(align:"<==")+(box:"=XX")[
+[[Home]]]
+]
+]
+]
+]
+
+<audio src=" https://static.wixstatic.com/mp3/c10194_903194d488dd4a5f8f9352672b7be319.mp3" autoplay>
+
+
+
+:: Home [Home] {"position":"700,275","size":"200,200"}
+
+(css: "font-size: 175%;")[
+.
+.
+.
+.
+
+(text-colour: black)[
+
+(align:"=><=")+(box:"X")[
+
+[Hello Cooks!
+
+Welcome to the interactive recipe book to learn how to make quick and easy meals using what you have in your home!
+
+
+(text-colour: #8BA14B)[
+(bg:#ddd0b7)[
+[[Click Here To Get Started!]]]
+
+]
+]
+]
+]
+]
+
+
+:: StoryScript [script]
+
+
+window.termList = window.termList || [];
+
+window.SearchTerm = window.SearchTerm || function (h, descr, kw) {
+    'use strict';
+    
+    if (this instanceof SearchTerm) {
+        this.handle      = h;
+        this.description = descr;
+        this.keywords    = kw;
+    } else {
+        return new SearchTerm(h, descr, kw);
+    }
+};
+
+SearchTerm.add = function (h, descr, kw) {
+    termList.push(new SearchTerm(h, descr, kw));
+};
+
+SearchTerm.prototype = {
+    
+    compare : function (stringArray) {
+        var term = this;
+        var matches = (function () {
+            var ret = 0;
+            stringArray.forEach( function (str) {
+                if (term.keywords.includes(str)) {
+                        ret++;
+                }
+            });
+            return ret;
+        }());
+        
+        return matches;
+        
+    },
+    
+    constructor : window.SearchTerm
+};
+
+$(document).on('change', 'input[name=search-box]', function (e) {
+    var string = $(this).val(),
+            matches = [], i, n = -1, highest = 0, content;
+    
+    string = string.replace(/[^A-Za-z0-9\s]/, ' ');
+    string = string.replace(/[\s\s+]/, ' ');
+    string = string.trim();
+    string = string.split(' ');
+    
+    termList.forEach( function (term) {
+        matches.push(term.compare(string));
+    });
+    
+    for (i = 0; i < matches.length; i++) {
+        if (matches[i] > n) {
+            n = matches[i];
+            highest = i;
+        }
+    }
+    
+    if (n <= 0) {
+        content = '';
+    } else {
+        content = termList[highest].handle + ': ' + termList[highest].description;
+    }
+    
+    $('#output')
+        .empty()
+        .append(content);
+});
+
+// add your search terms here...
+SearchTerm.add('egg', 'egg', ['egg', 'eggs']);
+SearchTerm.add('bread', 'dough', ['bread', 'pan']);
+
+
+
+:: StoryStylesheet [stylesheet]
+tw-story {
+ background-image:url("https://static.wixstatic.com/media/c10194_3a077e90348a4ae49b7417474fb2a4c4~mv2.png");
+ background-size:cover;
+}
+
+tw-story[tags~="Home"] {
+ background-image:url("https://static.wixstatic.com/media/c10194_54c545fce1734c01a6172eb428733b5d~mv2.png");
+ background-size:cover;
+}
+

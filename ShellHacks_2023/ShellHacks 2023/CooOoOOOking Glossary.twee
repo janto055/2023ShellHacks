@@ -1,0 +1,66 @@
+:: StoryTitle
+CooOoOOOking
+
+
+:: StoryData
+{
+  "ifid": "BB9EED6F-B1E8-4E1B-A57B-2BE0B6ED9911",
+  "format": "Harlowe",
+  "format-version": "3.3.7",
+  "start": "Glossary",
+  "zoom": 1
+}
+
+
+:: Al Dente {"position":"750,450","size":"100,100"}
+(align:"=><=")+(box:"X")[<iframe width="950" height="750" src="https://www.youtube.com/watch?v=_OnTemsrUrw" frameborder="0" allowfullscreen></iframe>]
+
+
+:: Glossary {"position":"625,325","size":"100,100"}
+ (css:"font-size: 175%")[
+ (text-color:black)[
+[[Al Dente]]: pasta or rice that is cooked to be firm to the bite.
+
+[[Kitchen Safety]]: The proper safety precautions that must be maintained to ensure a safe kitchen. 
+
+[[Knife Safety]]: The proper way of handling a knife while chopping
+
+[[Lemon Zest]]: The outer layer of a lemon, shaved onto dishes to add flavor
+
+[[Saute]]: To fry quickly in a little bit of hot fat.
+
+[[Whisk]]: Techniques on blending ingredients with a whisk.
+ ]
+ ]
+ 
+
+
+:: Kitchen Safety {"position":"625,575","size":"100,100"}
+(align:"=><=")+(box:"X")[<iframe width="950" height="750" src="https://www.youtube.com/watch?v=AUBGRjnL_vQ" frameborder="0" allowfullscreen></iframe>]
+
+
+:: Knife Safety {"position":"625,700","size":"100,100"}
+(align:"=><=")+(box:"X")[<iframe width="950" height="750" src="https://www.youtube.com/watch?v=3kmDuLVwM48" frameborder="0" allowfullscreen></iframe>]
+
+
+:: Lemon Zest {"position":"500,575","size":"100,100"}
+(align:"=><=")+(box:"X")[<iframe width="950" height="750" src="https://www.youtube.com/watch?v=cmtQFxNuFJQ" frameborder="0" allowfullscreen></iframe>]
+
+
+:: Saute {"position":"500,450","size":"100,100"}
+
+(align:"=><=")+(box:"X")[<iframe width="850" height="550" src="https://www.youtube.com/watch?v=CTyV3JExDT8" frameborder="0" allowfullscreen></iframe>]
+
+
+
+:: Whisk {"position":"750,575","size":"100,100"}
+
+(align:"=><=")+(box:"X")[<iframe width="950" height="750" src="https://youtu.be/2WcvoVHgKos?si=mOFCDMUe6Lh8Mv-p" frameborder="0" allowfullscreen></iframe>]
+
+
+:: StoryStylesheet [stylesheet]
+tw-story {
+  background-image: url("https://static.wixstatic.com/media/c10194_1ffd9466a14340a2ae97724a77095a4f~mv2.webp");
+  background-size: cover;
+  background-position: center center;
+}
